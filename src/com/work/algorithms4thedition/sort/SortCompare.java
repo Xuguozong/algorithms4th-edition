@@ -1,7 +1,7 @@
 package com.work.algorithms4thedition.sort;
 
 import com.work.algorithms4thedition.sort.insertion.InsertionSortExample;
-import com.work.algorithms4thedition.sort.merge.MergeSortExample;
+import com.work.algorithms4thedition.sort.merge.TDMergeSortExample;
 import com.work.algorithms4thedition.sort.selection.SelectionSortExample;
 import com.work.algorithms4thedition.sort.shell.ShellSortExample;
 
@@ -27,7 +27,7 @@ public class SortCompare {
                 ShellSortExample.sort(a);
                 break;
             case "merge" :
-                MergeSortExample.sort(a);
+                TDMergeSortExample.sort(a);
                 break;
             default:
                 throw new RuntimeException("不支持的排序类型");

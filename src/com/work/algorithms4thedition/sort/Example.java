@@ -27,7 +27,7 @@ public class Example {
      */
     protected static void print(Comparable[] a){
         for (Comparable c : a){
-            System.out.println(c);
+            System.out.print(c);
         }
         System.out.println();
     }
