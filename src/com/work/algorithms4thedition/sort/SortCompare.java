@@ -2,8 +2,11 @@ package com.work.algorithms4thedition.sort;
 
 import com.work.algorithms4thedition.sort.insertion.InsertionSortExample;
 import com.work.algorithms4thedition.sort.merge.TDMergeSortExample;
+import com.work.algorithms4thedition.sort.quick.BasicQuickSortExample;
 import com.work.algorithms4thedition.sort.selection.SelectionSortExample;
 import com.work.algorithms4thedition.sort.shell.ShellSortExample;
+
+import java.util.Arrays;
 
 /**
  * ClassName SortCompare
@@ -28,6 +31,12 @@ public class SortCompare {
                 break;
             case "merge" :
                 TDMergeSortExample.sort(a);
+                break;
+            case "quick" :
+                BasicQuickSortExample.sort(a);
+                break;
+            case "array.sort" :
+                Arrays.sort(a);
                 break;
             default:
                 throw new RuntimeException("不支持的排序类型");
@@ -60,5 +69,7 @@ public class SortCompare {
         System.out.println("selection sort avg:" + randomInput("selection", 10000, 100)/100);
         System.out.println("shell sort avg:" + randomInput("shell", 10000, 100)/100);
         System.out.println("merge sort avg:" + randomInput("merge", 10000, 100)/100);
+        System.out.println("quick sort avg:" + randomInput("quick", 10000, 100)/100);
+        System.out.println("arrays sort avg:" + randomInput("array.sort", 10000, 100)/100);
     }
 }

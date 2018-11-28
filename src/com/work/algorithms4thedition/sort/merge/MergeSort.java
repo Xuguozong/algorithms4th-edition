@@ -2,8 +2,6 @@ package com.work.algorithms4thedition.sort.merge;
 
 import com.work.algorithms4thedition.sort.Example;
 
-import java.util.Arrays;
-
 /**
  * ClassName MergeSort
  * Description Top-Down 和 Bottom-Up 归并公用的merge()方法
@@ -23,13 +21,6 @@ public abstract class MergeSort extends Example {
      * @param hi
      */
     protected static void merge(Comparable[] a, Comparable[] aux, int lo, int mid, int hi){
-        Arrays.asList(a).forEach(System.out::print);
-        System.out.println();
-        System.out.println("lo: " + lo);
-        System.out.println("mid: " + mid);
-        System.out.println("hi: " + hi);
-        System.out.println();
-
         // 前提条件， 子数组已经排好序
         assert isSorted(a, lo, mid);
         assert isSorted(a, mid + 1, hi);
